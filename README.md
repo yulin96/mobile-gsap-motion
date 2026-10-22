@@ -6,6 +6,20 @@
 
 ## 全局安装
 
+以下安装方式任选一种；已有同名技能时先核对内容，避免重复安装到多个技能目录。
+
+### 使用 npx skills
+
+需要已安装 Node.js/npm。全局安装到 Codex：
+
+```sh
+npx skills add yulin96/mobile-gsap-motion --global --agent codex --skill mobile-gsap-motion
+```
+
+`--global` 表示跨项目使用，`--agent codex` 指定 Codex，`--skill` 指定本技能。省略 `--agent codex` 可交互选择其他支持的 Agent；这类安装由 Skills CLI 管理。参数说明见 [Skills CLI 文档](https://github.com/vercel-labs/skills/blob/main/docs/commands.md)。
+
+### 使用 Git
+
 需要已安装 Codex 和 Git。以下命令将仓库直接安装到个人全局技能目录；已有同名目录时，先核对内容，不直接覆盖。
 
 Windows PowerShell：
@@ -23,6 +37,8 @@ git clone https://github.com/yulin96/mobile-gsap-motion.git "${CODEX_HOME:-$HOME
 ```
 
 安装后在下一轮对话使用 `$mobile-gsap-motion`。如果当前客户端未刷新技能列表，重新打开对话或重启客户端后再使用。
+
+### 使用 Codex 内置安装技能
 
 也可以在 Codex 中调用内置安装技能：
 
@@ -59,6 +75,12 @@ git clone https://github.com/yulin96/mobile-gsap-motion.git "${CODEX_HOME:-$HOME
 - `agents/openai.yaml`：Codex 展示与调用元数据。
 
 ## 更新
+
+通过 `npx skills` 安装时，可使用：
+
+```sh
+npx skills update mobile-gsap-motion --global
+```
 
 通过 Git 克隆安装、且本地没有自行修改时，进入技能目录执行：
 
