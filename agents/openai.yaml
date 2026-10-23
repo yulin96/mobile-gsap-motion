@@ -1,4 +1,4 @@
 interface:
   display_name: "Mobile GSAP Motion"
   short_description: "为手机端界面设计有层次、有巧思且状态稳定的 GSAP 动画"
-  default_prompt: "使用 $mobile-gsap-motion 为当前手机端界面设计并实现有层次的 GSAP 动画，在合适位置加入灵动细节，并遵守项目现有规范。"
+  default_prompt: "使用 $mobile-gsap-motion 为当前手机端界面实现有层次和适当灵动细节的 GSAP 动画，优先沿用项目默认路由动画，仅在我明确要求时定制特殊转场。"

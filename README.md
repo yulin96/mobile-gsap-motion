@@ -4,6 +4,8 @@
 
 适用于不同前端框架与设计体系，不绑定品牌、活动、页面名称、素材路径或固定数值。沿用项目已有 hook、缓存生命周期与验证权限。
 
+路由动画优先使用项目当前默认效果；没有时保留现状。只有明确要求特殊切换、展开/缩回等效果时，才针对对应页面编写适配。新增普通长页动画优先连续入场，滚动联动按明确需求或现有项目约定处理。
+
 ## 全局安装
 
 以下安装方式任选一种；已有同名技能时先核对内容，避免重复安装到多个技能目录。
@@ -62,6 +64,12 @@ git clone https://github.com/yulin96/mobile-gsap-motion.git "${CODEX_HOME:-$HOME
 使用 $mobile-gsap-motion 检查逐行入场：避免首帧闪现、后面的内容插队，以及修改 stagger 后排队时间没有同步。
 ```
 
+指定特殊路由效果：
+
+```text
+使用 $mobile-gsap-motion 为当前详情页单独实现返回时缩回菜单卡片的效果，内容依次退场，并衔接菜单入场。
+```
+
 在项目 `AGENTS.md` 中加入调用规则：
 
 ```markdown
@@ -70,8 +78,9 @@ git clone https://github.com/yulin96/mobile-gsap-motion.git "${CODEX_HOME:-$HOME
 
 ## 内容
 
-- [SKILL.md](SKILL.md)：选效、编排、首帧与终态、缓存和验证边界。
-- [动画模式与参数](references/patterns.md)：收拢与一次扩散、逐行排队、贴边背景及灵动细节。
+- [SKILL.md](SKILL.md)：默认路由与特殊转场边界、连续入场、选效、首帧与终态、缓存和验证。
+- [动画模式与参数](references/patterns.md)：连续入场、收拢与一次扩散、滚动逐行排队、贴边背景及灵动细节。
+- [场景验收](references/scenarios.md)：用于维护指令的典型请求与预期行为。
 - `agents/openai.yaml`：Codex 展示与调用元数据。
 
 ## 更新
