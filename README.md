@@ -1,6 +1,6 @@
 # mobile-gsap-motion
 
-为手机端网页设计、实现和排查 GSAP 动画的 Codex Skill。覆盖有层次的入场、逐行错峰、滚动揭示、背景呼吸，以及适合局部使用的灵动细节。
+为手机端网页设计、调优和排查 GSAP 动画的 Codex Skill。覆盖有层次的入场、差异化错峰、卡片回弹、弹窗开合、序列帧收尾，以及背景呼吸和适合局部使用的灵动细节。
 
 适用于不同前端框架与设计体系，不绑定品牌、活动、页面名称、素材路径或固定数值。沿用项目已有 hook、缓存生命周期与验证权限。
 
@@ -78,8 +78,8 @@ git clone https://github.com/yulin96/mobile-gsap-motion.git "${CODEX_HOME:-$HOME
 
 ## 内容
 
-- [SKILL.md](SKILL.md)：默认路由与特殊转场边界、连续入场、选效、首帧与终态、缓存和验证。
-- [动画模式与参数](references/patterns.md)：连续入场、收拢与一次扩散、滚动逐行排队、贴边背景及灵动细节。
+- [SKILL.md](SKILL.md)：路由边界、节奏调优、卡片换位、序列帧、弹窗退出、首帧与终态、缓存和验证。
+- [动画模式与参数](references/patterns.md)：连续入场与完成标签、行程与回弹、稳定绘制层、弹窗中断、序列帧收尾、扩散回声及滚动逐行排队。
 - [场景验收](references/scenarios.md)：用于维护指令的典型请求与预期行为。
 - `agents/openai.yaml`：Codex 展示与调用元数据。
 
