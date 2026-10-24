@@ -78,7 +78,7 @@ git clone https://github.com/yulin96/mobile-gsap-motion.git "${CODEX_HOME:-$HOME
 
 ## 内容
 
-- [SKILL.md](SKILL.md)：路由边界、节奏调优、卡片换位、序列帧、弹窗退出、首帧与终态、缓存和验证。
+- [SKILL.md](SKILL.md)：路由边界、节奏调优、按场景选用的布局换位与媒体播放、弹窗退出、首帧与终态、缓存和验证。
 - [动画模式与参数](references/patterns.md)：连续入场与完成标签、行程与回弹、稳定绘制层、弹窗中断、序列帧收尾、扩散回声及滚动逐行排队。
 - [场景验收](references/scenarios.md)：用于维护指令的典型请求与预期行为。
 - `agents/openai.yaml`：Codex 展示与调用元数据。
